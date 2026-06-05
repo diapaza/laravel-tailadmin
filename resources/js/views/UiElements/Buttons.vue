@@ -4,38 +4,38 @@
     <div class="space-y-5 sm:space-y-6">
       <ComponentCard title="Primary Button">
         <div class="flex items-center gap-5">
-          <Button size="sm" variant="primary"> Button Text </Button>
-          <Button size="md" variant="primary"> Button Text </Button>
+          <BaseButton size="sm" variant="primary"> Button Text </BaseButton>
+          <BaseButton size="md" variant="primary"> Button Text </BaseButton>
         </div>
       </ComponentCard>
       <ComponentCard title="Primary Button with Left Icon">
         <div class="flex items-center gap-5">
-          <Button size="sm" variant="primary" :startIcon="BoxIcon"> Button Text </Button>
-          <Button size="md" variant="primary" :startIcon="BoxIcon"> Button Text </Button>
+          <BaseButton size="sm" variant="primary" :startIcon="BoxIcon"> Button Text </BaseButton>
+          <BaseButton size="md" variant="primary" :startIcon="BoxIcon"> Button Text </BaseButton>
         </div>
       </ComponentCard>
       <ComponentCard title="Primary Button with Right Icon">
         <div class="flex items-center gap-5">
-          <Button size="sm" variant="primary" :endIcon="BoxIcon"> Button Text </Button>
-          <Button size="md" variant="primary" :endIcon="BoxIcon"> Button Text </Button>
+          <BaseButton size="sm" variant="primary" :endIcon="BoxIcon"> Button Text </BaseButton>
+          <BaseButton size="md" variant="primary" :endIcon="BoxIcon"> Button Text </BaseButton>
         </div>
       </ComponentCard>
       <ComponentCard title="Primary Button">
         <div class="flex items-center gap-5">
-          <Button size="sm" variant="outline"> Button Text </Button>
-          <Button size="md" variant="outline"> Button Text </Button>
+          <BaseButton size="sm" variant="outline"> Button Text </BaseButton>
+          <BaseButton size="md" variant="outline"> Button Text </BaseButton>
         </div>
       </ComponentCard>
       <ComponentCard title="Primary Button with Left Icon">
         <div class="flex items-center gap-5">
-          <Button size="sm" variant="outline" :startIcon="BoxIcon"> Button Text </Button>
-          <Button size="md" variant="outline" :startIcon="BoxIcon"> Button Text </Button>
+          <BaseButton size="sm" variant="outline" :startIcon="BoxIcon"> Button Text </BaseButton>
+          <BaseButton size="md" variant="outline" :startIcon="BoxIcon"> Button Text </BaseButton>
         </div>
       </ComponentCard>
       <ComponentCard title="Primary Button with Right Icon">
         <div class="flex items-center gap-5">
-          <Button size="sm" variant="outline" :endIcon="BoxIcon"> Button Text </Button>
-          <Button size="md" variant="outline" :endIcon="BoxIcon"> Button Text </Button>
+          <BaseButton size="sm" variant="outline" :endIcon="BoxIcon"> Button Text </BaseButton>
+          <BaseButton size="md" variant="outline" :endIcon="BoxIcon"> Button Text </BaseButton>
         </div>
       </ComponentCard>
     </div>
@@ -47,7 +47,7 @@ import { ref } from 'vue'
 import PageBreadcrumb from '@/components/common/PageBreadcrumb.vue'
 import AdminLayout from '@/components/layout/AdminLayout.vue'
 import ComponentCard from '@/components/common/ComponentCard.vue'
-import Button from '@/components/ui/Button.vue'
+import BaseButton from '@/components/base/BaseButton.vue'
 import { BoxIcon } from '@/icons'
 const currentPageTitle = ref('Buttons')
 </script>

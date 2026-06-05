@@ -9,8 +9,8 @@
                     Este es un ejemplo de un modal funcional. Puedes abrirlo haciendo clic en el botón y cerrarlo haciendo
                     clic fuera del modal o en el botón de cerrar.
                 </p>
-                <Button size="sm" variant="primary" @click="openBasicModal = true"> Abrir modal </Button>
-                <Modal v-model:isOpen="openBasicModal" title="Modal Funcional" size="md">
+                <BaseButton size="sm" variant="primary" @click="openBasicModal = true"> Abrir modal </BaseButton>
+                <BaseModal v-model:isOpen="openBasicModal" title="Modal Funcional" size="md">
                     <template #body>
                         <div class="space-y-4">
                             <p class="text-sm text-slate-600 dark:text-slate-400">Este modal se cierra al pulsar el botón o al hacer clic fuera.</p>
@@ -26,7 +26,7 @@
                             Cerrar
                         </button>
                     </template>
-                </Modal>
+                </BaseModal>
             </ComponentCard>
 
             <!-- Form Modal Example -->
@@ -34,7 +34,7 @@
                 <p class="text-sm text-slate-500 mb-4">
                     Ejemplo de modal con formulario CRUD. El modal se cierra después de enviar el formulario.
                 </p>
-                <Button size="sm" variant="primary" @click="openFormModal = true"> Crear Usuario </Button>
+                <BaseButton size="sm" variant="primary" @click="openFormModal = true"> Crear Usuario </BaseButton>
                 <FormModal
                     v-model:isOpen="openFormModal"
                     title="Crear Usuario"
@@ -52,8 +52,8 @@ import { ref } from 'vue'
 import PageBreadcrumb from '@/components/common/PageBreadcrumb.vue'
 import AdminLayout from '@/components/layout/AdminLayout.vue'
 import ComponentCard from '@/components/common/ComponentCard.vue'
-import Button from '@/components/ui/Button.vue'
-import Modal from '@/components/ui/Modal.vue'
+import BaseButton from '@/components/base/BaseButton.vue'
+import BaseModal from '@/components/base/BaseModal.vue'
 import FormModal from '@/components/ui/FormModal.vue'
 
 

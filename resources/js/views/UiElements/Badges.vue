@@ -4,28 +4,28 @@
     <div class="space-y-5 sm:space-y-6">
       <ComponentCard title="With Light Background">
         <div class="flex flex-wrap gap-4 sm:items-center sm:justify-center">
-          <Badge v-for="color in colors" :key="color" :color="color">
+          <BaseBadge v-for="color in colors" :key="color" :color="color">
             {{ color }}
-          </Badge>
+          </BaseBadge>
         </div>
       </ComponentCard>
       <ComponentCard title="With Solid Background">
         <div class="flex flex-wrap gap-4 sm:items-center sm:justify-center">
-          <Badge v-for="color in colors" :key="color" :color="color" variant="solid">
+          <BaseBadge v-for="color in colors" :key="color" :color="color" variant="solid">
             {{ color }}
-          </Badge>
+          </BaseBadge>
         </div>
       </ComponentCard>
       <ComponentCard title="Light Background with Left Icon">
         <div class="flex flex-wrap gap-4 sm:items-center sm:justify-center">
-          <Badge v-for="color in colors" :key="color" :color="color" :endIcon="PlusIcon">
+          <BaseBadge v-for="color in colors" :key="color" :color="color" :endIcon="PlusIcon">
             {{ color }}
-          </Badge>
+          </BaseBadge>
         </div>
       </ComponentCard>
       <ComponentCard title="Solid Background with Left Icon">
         <div class="flex flex-wrap gap-4 sm:items-center sm:justify-center">
-          <Badge
+          <BaseBadge
             v-for="color in colors"
             :key="color"
             :color="color"
@@ -33,19 +33,19 @@
             :startIcon="PlusIcon"
           >
             {{ color }}
-          </Badge>
+          </BaseBadge>
         </div>
       </ComponentCard>
       <ComponentCard title="Light Background with Right Icon">
         <div class="flex flex-wrap gap-4 sm:items-center sm:justify-center">
-          <Badge v-for="color in colors" :key="color" :color="color" :endIcon="PlusIcon">
+          <BaseBadge v-for="color in colors" :key="color" :color="color" :endIcon="PlusIcon">
             {{ color }}
-          </Badge>
+          </BaseBadge>
         </div>
       </ComponentCard>
       <ComponentCard title="Solid Background with Right Icon">
         <div class="flex flex-wrap gap-4 sm:items-center sm:justify-center">
-          <Badge
+          <BaseBadge
             v-for="color in colors"
             :key="color"
             :color="color"
@@ -53,7 +53,7 @@
             :endIcon="PlusIcon"
           >
             {{ color }}
-          </Badge>
+          </BaseBadge>
         </div>
       </ComponentCard>
     </div>
@@ -62,7 +62,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import Badge from '../../components/ui/Badge.vue'
+import BaseBadge from '@/components/base/BaseBadge.vue'
 import PageBreadcrumb from '../../components/common/PageBreadcrumb.vue'
 import AdminLayout from '../../components/layout/AdminLayout.vue'
 import ComponentCard from '../../components/common/ComponentCard.vue'

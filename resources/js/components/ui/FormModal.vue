@@ -1,5 +1,5 @@
 <template>
-  <Modal v-model:isOpen="isOpen" :title="title" :size="size" @close="handleClose">
+  <BaseModal v-model:isOpen="isOpen" :title="title" :size="size" @close="handleClose">
     <template #body>
       <form @submit.prevent="onSubmit" class="space-y-4">
         <slot name="form-fields">
@@ -37,12 +37,12 @@
         <span v-else>Guardando...</span>
       </BaseButton>
     </template>
-  </Modal>
+  </BaseModal>
 </template>
 
 <script setup lang="ts">
 import { reactive, computed, watch } from 'vue'
-import Modal from '@/components/ui/Modal.vue'
+import BaseModal from '@/components/base/BaseModal.vue'
 import BaseInput from '@/components/base/BaseInput.vue'
 import BaseButton from '@/components/base/BaseButton.vue'
 

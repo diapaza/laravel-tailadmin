@@ -1,5 +1,5 @@
 <template>
-  <AuthPageLayout title="Sign Up" description="Enter your email and password to sign up!">
+  <AuthLayout title="Sign Up" description="Enter your email and password to sign up!">
     <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-5">
       <SocialButton provider="google" label="Sign up with Google" />
       <SocialButton provider="x" label="Sign up with X" />
@@ -108,12 +108,12 @@
         </router-link>
       </p>
     </div>
-  </AuthPageLayout>
+  </AuthLayout>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import AuthPageLayout from '@/components/base/AuthPageLayout.vue'
+import AuthLayout from '@/components/layout/AuthLayout.vue'
 import SocialButton from '@/components/base/SocialButton.vue'
 import Divider from '@/components/base/Divider.vue'
 import BaseInput from '@/components/base/BaseInput.vue'

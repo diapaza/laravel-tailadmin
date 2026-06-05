@@ -21,17 +21,7 @@
     <!-- Password Input -->
     <div>
       <label class="mb-1.5 block text-sm font-medium text-gray-700 dark:text-gray-400">Password Input</label>
-      <div class="relative">
-        <BaseInput
-          :type="showPassword ? 'text' : 'password'"
-          v-model="formData.password"
-          placeholder="Enter your password"
-        />
-        <span @click="showPassword = !showPassword" class="absolute z-30 -translate-y-1/2 cursor-pointer right-4 top-1/2">
-          <EyeOffIcon v-if="!showPassword" class="fill-gray-500 dark:fill-gray-400" />
-          <EyeIcon v-else class="fill-gray-500 dark:fill-gray-400" />
-        </span>
-      </div>
+      <PasswordInput v-model="formData.password" placeholder="Enter your password" />
     </div>
 
     <!-- Date Picker Input -->
@@ -76,11 +66,8 @@ import flatPickr from 'vue-flatpickr-component'
 import 'flatpickr/dist/flatpickr.css'
 import BaseInput from '@/components/base/BaseInput.vue'
 import BaseSelect from '@/components/base/BaseSelect.vue'
-import EyeIcon from '@/icons/EyeIcon.vue'
-import EyeOffIcon from '@/icons/EyeOffIcon.vue'
+import PasswordInput from '@/components/base/PasswordInput.vue'
 import CalenderIcon from '@/icons/CalenderIcon.vue'
-
-const showPassword = ref(false)
 
 const selectOptions = [
   { value: 'marketing', label: 'Marketing' },
