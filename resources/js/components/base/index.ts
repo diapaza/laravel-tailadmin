@@ -1,4 +1,5 @@
 import BaseButton from './BaseButton.vue'
+import BaseToast from './BaseToast.vue'
 import BaseBadge from './BaseBadge.vue'
 import BaseCard from './BaseCard.vue'
 import BaseCheckbox from './BaseCheckbox.vue'
@@ -20,6 +21,7 @@ import BaseVerticalDivider from './BaseVerticalDivider.vue'
 
 export {
   BaseButton,
+  BaseToast,
   BaseBadge,
   BaseCard,
   BaseCheckbox,

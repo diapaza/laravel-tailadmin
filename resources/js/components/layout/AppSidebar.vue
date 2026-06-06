@@ -303,6 +303,7 @@ const menuGroups = [
           { name: "Images", path: "/images", pro: false },
           { name: "Videos", path: "/videos", pro: false },
           { name: "Modal", path: "/modal", pro: false },
+          { name: "Toasts", path: "/toasts", pro: false },
         ],
       },
       {

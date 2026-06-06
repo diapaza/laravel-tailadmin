@@ -108,6 +108,15 @@ const router = createRouter({
     },
 
     {
+      path: '/toasts',
+      name: 'Toasts',
+      component: () => import('../views/UiElements/Toasts.vue'),
+      meta: {
+        title: 'Toasts',
+      },
+    },
+
+    {
       path: '/images',
       name: 'Images',
       component: () => import('../views/UiElements/Images.vue'),
