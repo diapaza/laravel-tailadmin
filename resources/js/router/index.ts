@@ -108,6 +108,15 @@ const router = createRouter({
     },
 
     {
+      path: '/dialogs',
+      name: 'Dialogs',
+      component: () => import('../views/UiElements/Dialogs.vue'),
+      meta: {
+        title: 'Dialogs',
+      },
+    },
+
+    {
       path: '/toasts',
       name: 'Toasts',
       component: () => import('../views/UiElements/Toasts.vue'),

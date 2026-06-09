@@ -3,6 +3,7 @@
     <SidebarProvider>
       <RouterView />
       <BaseToast />
+      <GlobalDialog />
     </SidebarProvider>
   </ThemeProvider>
 </template>
@@ -11,4 +12,5 @@
 import ThemeProvider from './components/layout/ThemeProvider.vue'
 import SidebarProvider from './components/layout/SidebarProvider.vue'
 import BaseToast from './components/base/BaseToast.vue'
+import GlobalDialog from './components/shared/GlobalDialog.vue'
 </script>

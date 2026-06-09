@@ -43,6 +43,7 @@ import PaperclipIcon from "./PaperclipIcon.vue";
 import PieChartIcon from "./PieChartIcon.vue";
 import PlugInIcon from "./PlugInIcon.vue";
 import PlusIcon from "./PlusIcon.vue";
+import QuestionIcon from "./QuestionIcon.vue";
 import RefreshIcon from "./RefreshIcon.vue";
 import SearchIcon from "./SearchIcon.vue";
 import SendIcon from "./SendIcon.vue";
@@ -108,6 +109,7 @@ export {
   PieChartIcon,
   PlugInIcon,
   PlusIcon,
+  QuestionIcon,
   RefreshIcon,
   SearchIcon,
   SendIcon,
